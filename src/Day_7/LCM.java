@@ -8,6 +8,7 @@ public class LCM {
         for(int i = 1; i <= min; i++){
             if((A % i == 0) && (B % i == 0)){
                 lcmvalue = i;
+                break;
             }
         }
 
