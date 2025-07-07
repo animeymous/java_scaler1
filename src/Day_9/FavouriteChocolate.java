@@ -1,3 +1,5 @@
+package Day_9;
+
 public class FavouriteChocolate {
 
     //this function will calculate how many number number of chocolates user can buy
