@@ -10,6 +10,12 @@ public class Inverted_Full_Pyramid {
         int num = sc.nextInt();
         int count = 0;
         for(int i = num; i > 0; i--){
+            //print spaces
+            for(int k = 0; k <= count; k++ ){
+                System.out.print(" ");
+            }
+            count++;
+
             //print stars
             for(int j = 1; j <= i; j++){
                 System.out.print("*");
@@ -18,11 +24,6 @@ public class Inverted_Full_Pyramid {
                 }
             }
 
-            //print spaces
-            for(int k = 0; k <= count; k++ ){
-                System.out.print(" ");
-            }
-            count++;
             System.out.println();
         }
     }
