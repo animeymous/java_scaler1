@@ -43,24 +43,9 @@ For example if N = 5 then pattern will be like:
    * *
     *
 NOTE: There should be exactly one extra space after each * for each row.
-
-
-
-
-
-
-
-
-
-
-
-
-
 Problem Constraints
 
 2 <= N <= 100
-
-
 
 Input Format
 First and only line of input contains a single integer N.
