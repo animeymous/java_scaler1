@@ -24,8 +24,10 @@ public class Matrix_Transpose {
     public void transposeMatrix(List<List<Integer>> arr, int N, int M){
         int [][] newArr = new int[N][M];
 
+        //reading column wise
         for(int col = 0; col < M; col++){
             for(int row = 0; row < N; row++){
+                //entering values column wise
                 newArr[col][row] = arr.get(row).get(col);
             }
         }
