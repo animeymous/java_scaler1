@@ -2,15 +2,14 @@ package Day_13;
 
 import java.util.Scanner;
 
-public class First_Occurrence {
+public class Last_Occurrence {
     //find occurrence
     public void findOccurrence(String str, int num){
         int index = -1;
 
         for(int i = 0; i < str.length(); i++){
             if(str.charAt(i) == num){
-                index = i;
-                break; // will break loop in first occurrence
+                index = i; // will take last occurrence
             }
         }
 
@@ -21,7 +20,7 @@ public class First_Occurrence {
         }
 
     }
-    public void first_Occurrence(){
+    public void last_Occurrence(){
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Please provide string");
@@ -34,20 +33,5 @@ public class First_Occurrence {
 }
 
 /*
-Problem Description
-You are given a character string A, having length N and an integer ASCII code B.
-You have to tell the leftmost occurrence of the character having ASCII code equal to B, in A or report that it does not exist.
 
-Problem Constraints
-1 <= N <= 105
-
-A[i] ∈ ['a'-'z']
-97 <= B <= 122
-
-Input Format
-First argument is a character string A.
-Second argument is an integer B.
-
-Output Format
-If there exists an occurrence, return the leftmost index(0 - based), else return -1.
 */
