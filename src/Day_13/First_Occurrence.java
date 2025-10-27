@@ -1,20 +1,24 @@
+package Day_13;
+
 import java.util.Scanner;
 
 public class First_Occurrence {
     //fint occurrence
     public void findOccurrence(String str, int num){
-        int charCount = 0;
+        int index = -1;
+        boolean found = false;
 
         for(int i = 0; i < str.length(); i++){
             if(str.charAt(i) == num){
-                charCount++;
+                index = i;
+                break;
             }
         }
 
-        if (charCount > 0){
-            System.out.println("Character count "+charCount);
-        }else {
-            System.out.println(-1);
+        if(index != -1){
+            System.out.println("Index of first occurrence "+index);
+        }else{
+            System.out.println("Not found -1");
         }
 
     }
